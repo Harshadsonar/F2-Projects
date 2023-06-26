@@ -1,0 +1,4 @@
+{
+    "testRepo": "i-m-not-a-robot-solution",
+    "pathToFile": "cypress/integration/tests/test.spec.js"
+}

@@ -1,0 +1,183 @@
+* {
+    margin: 0;
+}
+
+.container {
+    min-height: 300px;
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+
+.box {
+    width: 300px;
+    background-color: #f4f5f7;
+    border-radius: 10px;
+    padding: 20px 10px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 20px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.title+.material-icons {
+    display: none;
+}
+
+.title-container>.title:hover+.material-icons {
+    display: block;
+}
+
+.title:hover {
+    background-color: #5d677861;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box .title {
+    font-size: 14px;
+    color: #5e6c84;
+    flex-grow: 1px;
+    transition: 0.2s;
+}
+
+#create-issue {
+    /* display: block;
+    width: 100%; */
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: none;
+    color: #41526E;
+    font-size: 15px;
+    gap: 10px;
+    transition-duration: 0.4s;
+    padding: 4px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#create-issue:hover {
+    background-color: #47516172;
+}
+
+.item {
+    border: 2px solid #0052cc;
+    border-radius: 5px;
+    display: flex;
+    flex-flow: column wrap;
+    gap: 10px;
+}
+
+.item>textarea,
+.textarea:focus {
+    border: none;
+    outline: none;
+    background-color: transparent;
+}
+
+.item:focus {
+    outline: none;
+}
+
+.item>select {
+    border: none;
+    padding: 10px;
+    background-color: transparent;
+    align-self: flex-start;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 82, 204, 0.137);
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.modal form {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 100px;
+    gap: 20px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 3px;
+    width: 30vw;
+    position: relative;
+}
+
+.modal input,
+.modal textarea,
+.modal button,
+.modal select {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: #f4f5f7;
+}
+
+.modal button {
+    background-color: #0052cc;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+}
+
+.card {
+    background-color: white;
+    padding: 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 1px 1px rgba(122, 93, 93, 0.323);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card .task-name {
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.card .description {
+    font-size: 12px;
+}
+
+.card .status {
+    font-size: 10px;
+}
+
+.card .status-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.assignee::before {
+    display: inline-block;
+    content: attr(data-short-name);
+    padding: 3px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: yellow;
+}

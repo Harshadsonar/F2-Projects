@@ -1,0 +1,42 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+.header {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-links {
+    display: flex;
+}
+
+.main-container {
+    display: flex;
+}
+
+.main-container-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.recipe-list {
+    display: flex;
+    list-style-type: none;
+}
+
+.recipes-heading {
+    position: absolute;
+    width: 570px;
+    height: 72px;
+    left: 675px;
+    top: 2678px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 72px;
+    /* identical to box height */
+    /* Food Delivery/ PG */
+    color: #212244;
+    text-align: center;
+}

@@ -1,0 +1,49 @@
+.img1 {
+    content: url("https://picsum.photos/id/237/200/300");
+    z-index: 1;
+}
+
+.img2 {
+    content: url("https://picsum.photos/seed/picsum/200/300");
+    z-index: 2;
+}
+
+.img3 {
+    content: url("https://picsum.photos/200/300?grayscale");
+    z-index: 3;
+}
+
+.img4 {
+    content: url("https://picsum.photos/200/300/");
+    z-index: 4;
+}
+
+.img5 {
+    content: url("https://picsum.photos/200/300.jpg");
+    z-index: 5;
+}
+
+img {
+    margin: 10px;
+    border: 5px solid #555;
+    width: 10%;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+}
+
+.selected {
+    border: 5px solid rgb(0, 195, 255);
+}
+
+p {
+    text-align: center;
+}
+
+button {
+    margin: 20px;
+}
